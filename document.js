@@ -11,6 +11,7 @@
   }
   const setText = (id, value) => { document.getElementById(id).textContent = value; };
   const setLink = (id, value) => { document.getElementById(id).href = value; };
+  const labeledAsset = path => `${path}?v=center-1`;
   const pageCount = Number.isInteger(Number(item.pageCount)) && Number(item.pageCount) > 0 ? Number(item.pageCount) : 0;
   document.title = `${item.name} · MSDS 자료실`;
   setText('document-title', item.name);
@@ -22,10 +23,10 @@
   setText('preview-count', `전체 ${pageCount}쪽`);
   setLink('open-pdf', item.pdf);
   setLink('download-pdf', item.pdf);
-  setLink('open-cover', item.cover);
-  setLink('download-qr', item.qr);
+  setLink('open-cover', labeledAsset(item.cover));
+  setLink('download-qr', labeledAsset(item.qr));
   document.getElementById('download-qr').download = `${item.id}-qr.png`;
-  document.getElementById('product-qr').src = item.qr;
+  document.getElementById('product-qr').src = labeledAsset(item.qr);
   document.getElementById('product-qr').alt = `${item.name} MSDS 페이지로 연결되는 QR 코드`;
   const source = item.sourcePageUrl || item.sourceUrl;
   try {
