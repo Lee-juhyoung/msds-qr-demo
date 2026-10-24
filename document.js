@@ -19,12 +19,12 @@
   setText('document-manufacturer', `제조·공급사 · ${item.manufacturer || '미확인'}`);
   setText('revision-date', item.revisionDate || '문서에서 확인');
   setText('collection-date', data.checkedAt || '미확인');
-  setText('page-count', `${pageCount}쪽`);
+  setText('page-count', `${pageCount}쪽${item.language === 'English' ? ' · 영문 원문' : ''}`);
   setText('preview-count', `전체 ${pageCount}쪽`);
   setLink('open-pdf', item.pdf);
   setLink('download-pdf', item.pdf);
-  setLink('open-cover', labeledAsset(item.cover));
-  setLink('open-safety-summary', `summaries/${encodeURIComponent(item.id)}.pdf?v=safety-1`);
+  setLink('open-cover', `${item.cover}?v=add-3`);
+  setLink('open-safety-summary', `summaries/${encodeURIComponent(item.id)}.pdf?v=add-3`);
   setLink('download-qr', labeledAsset(item.qr));
   document.getElementById('download-qr').download = `${item.id}-qr.png`;
   document.getElementById('product-qr').src = labeledAsset(item.qr);

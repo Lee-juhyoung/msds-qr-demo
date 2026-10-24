@@ -1,0 +1,2 @@
+# Preserve PDF byte offsets and original supplier files on every checkout.
+*.pdf binary

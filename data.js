@@ -4,7 +4,7 @@ window.MSDS_DATA = {
   "items": [
     {
       "id": "wd40-multi-use",
-      "name": "더블유디-40 (WD-40)",
+      "name": "WD-40",
       "manufacturer": "벡스인터코퍼레이션㈜",
       "category": "방청·윤활제",
       "revisionDate": "2024-07-22",
@@ -91,6 +91,59 @@ window.MSDS_DATA = {
       "qr": "qr/sikaceram-cleangrout.png",
       "sha256": "27ba01d5fa61595000476e9e122ff7dea1dbaef53530a0b5a6526b3169d998b2",
       "collectedAt": "2026-10-24"
+    },
+    {
+      "id": "gs-diesel",
+      "name": "GS칼텍스 경유 · 초저유황경유(ULSD)",
+      "manufacturer": "지에스칼텍스(주)",
+      "category": "자동차용 경유",
+      "revisionDate": "2025-12-31",
+      "sourceUrl": "https://www.gscaltex.com/downloadMsds/921",
+      "sourcePageUrl": "https://www.gscaltex.com/kr/Business/OilRefinary/Disel",
+      "pageCount": 13,
+      "sha256": "f8390d751b7c461c405428fb6a77f155a0ef4dd9b6a36a11361b16fd0dbf39c6",
+      "pdf": "documents/gs-diesel.pdf",
+      "cover": "covers/gs-diesel.pdf",
+      "qr": "qr/gs-diesel.png",
+      "collectedAt": "2026-10-24",
+      "originalProductName": "초저유황경유 (ULSD)",
+      "msdsNumber": "AA03534-0000000462"
+    },
+    {
+      "id": "eurox-urea-32-5",
+      "name": "유록스 요소수 32.5%",
+      "manufacturer": "롯데정밀화학",
+      "category": "디젤 SCR용 요소수",
+      "revisionDate": "2024-07-05",
+      "sourceUrl": "https://www.eurox.co.kr/res/doc/2024_eurox_Liquid_element_32_5.pdf",
+      "sourcePageUrl": "https://www.eurox.co.kr/product.do?cover",
+      "pageCount": 10,
+      "sha256": "33a688019622768fa4564afd7919e1becc1be9acfd7112feb467bd2c15e7f3ba",
+      "pdf": "documents/eurox-urea-32-5.pdf",
+      "cover": "covers/eurox-urea-32-5.pdf",
+      "qr": "qr/eurox-urea-32-5.png",
+      "collectedAt": "2026-10-24",
+      "originalProductName": "액상요소(요소수) 32.5% / UREA 32.5% SOLUTION",
+      "msdsNumber": "AA00633-0000000020",
+      "printedPageCount": 11,
+      "sourceNotes": "원본 PDF 실제 10쪽, 인쇄 쪽수는 1/11~10/11. 16항까지 존재하나 인쇄분모 11과의 불일치 및 추가 누락 여부는 공급사 확인 전 미해결. 추출 텍스트에 오래된 2015년 헤더가 남아 있으나 렌더에 보이는 2024.07.05 헤더와 16항 Rev.16(2024.07.05)을 기준으로 개정일 기록."
+    },
+    {
+      "id": "sika-thailand-separol-th",
+      "name": "Sika® Separol TH (거푸집 박리제)",
+      "manufacturer": "Sika (Thailand) Limited",
+      "category": "거푸집 박리제",
+      "revisionDate": "2020-06-11",
+      "sourceUrl": "https://tha.sika.com/dam/dms/th01/9/GHS%20SDS_E_Sika%20Separol%20TH_2020.pdf",
+      "sourcePageUrl": "https://tha.sika.com/en/retail/concrete-admixture/sika-separol-th.html",
+      "pageCount": 8,
+      "sha256": "c41424e7caa851c3a60f90aa961197605f9dd16bcc5a458bd1756cda003745e5",
+      "pdf": "documents/sika-thailand-separol-th.pdf",
+      "cover": "covers/sika-thailand-separol-th.pdf",
+      "qr": "qr/sika-thailand-separol-th.png",
+      "collectedAt": "2026-10-24",
+      "sourceNotes": "태국 제조·공급사 공식 영어 SDS. 2026-10-24 제품 페이지의 Safety Data Sheet 링크에서 내려받은 현재 공개본이며, 가장 최근 개정본이라고 단정하지 않음. 제품 페이지가 콘크리트/그라우트의 목재·철재 거푸집 탈형 용도를 명시. 한국어 요약은 영어 원문의 보조 번역이며 국내 제품의 MSDS를 대신하지 않음. PDF bytes 그대로 보존.",
+      "language": "English"
     }
   ]
 };

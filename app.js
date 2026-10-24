@@ -42,7 +42,7 @@
       heading.append(link);
       body.append(heading, element('p', 'document-row-manufacturer', item.manufacturer || '제조·공급사 미확인'));
       const metadata = element('div', 'document-row-meta');
-      metadata.append(element('span', 'meta-label', '문서 개정일'), element('strong', '', item.revisionDate || '문서에서 확인'), element('span', 'page-label', `${item.pageCount || '—'}쪽 · PDF`));
+      metadata.append(element('span', 'meta-label', '문서 개정일'), element('strong', '', item.revisionDate || '문서에서 확인'), element('span', 'page-label', `${item.pageCount || '—'}쪽 · ${item.language === 'English' ? '영문 PDF' : 'PDF'}`));
       const arrow = element('span', 'row-arrow', '↗');
       arrow.setAttribute('aria-hidden', 'true');
       row.append(number, body, metadata, arrow);
