@@ -24,6 +24,7 @@
   setLink('open-pdf', item.pdf);
   setLink('download-pdf', item.pdf);
   setLink('open-cover', labeledAsset(item.cover));
+  setLink('open-safety-summary', `summaries/${encodeURIComponent(item.id)}.pdf?v=safety-1`);
   setLink('download-qr', labeledAsset(item.qr));
   document.getElementById('download-qr').download = `${item.id}-qr.png`;
   document.getElementById('product-qr').src = labeledAsset(item.qr);
