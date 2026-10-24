@@ -4,34 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123f3b">
-  <meta name="description" content="제품별 물질안전보건자료, 공식 출처와 인쇄용 갑지를 확인하세요.">
-  <title>제품 안전자료 · MSDS 자료실</title>
+  <meta name="description" content="MSDS 원문과 제품별 QR, 인쇄용 갑지.">
+  <title>MSDS</title>
   <link rel="stylesheet" href="styles.css">
   <script src="data.js" defer></script>
   <script src="document.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
-  <header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html" aria-label="MSDS 자료실 홈"><span class="brand-mark" aria-hidden="true">M</span> MSDS 자료실</a><span class="sample-tag">QR 연결 예시</span></div></header>
   <main class="shell document-main" id="main">
-    <nav class="breadcrumb" aria-label="페이지 경로"><a href="index.html">← 전체 자료 목록</a><span aria-hidden="true">/</span><span>제품 안전자료</span></nav>
+    <nav class="breadcrumb" aria-label="페이지 경로"><a href="index.html">← 전체 목록</a><span class="sample-tag">예시 자료</span></nav>
     <div id="document-content" hidden>
-      <section class="document-heading" aria-labelledby="document-title">
-        <div><p class="eyebrow">SAFETY DATA SHEET</p><span class="category-tag" id="document-category"></span><h1 id="document-title"></h1><p class="manufacturer" id="document-manufacturer"></p></div>
-        <div class="document-main-actions"><a class="button button-primary" id="open-pdf" target="_blank" rel="noopener">원문 PDF 열기 <span aria-hidden="true">↗</span><span class="sr-only">(새 탭)</span></a><a class="button button-secondary" id="download-pdf" download>MSDS 내려받기 <span aria-hidden="true">↓</span></a></div>
-      </section>
-      <p class="notice"><span class="notice-label">예시 자료</span> 공식 공개 자료로 구성한 예시입니다. 실제 사용 제품과 문서가 일치하는지 확인하세요.</p>
-      <div class="document-layout">
-        <aside class="document-sidebar" aria-label="문서 정보와 QR">
-          <section class="metadata-section"><h2>문서 정보</h2><dl class="metadata"><div><dt>문서 개정일</dt><dd id="revision-date"></dd></div><div><dt>자료 수집일</dt><dd id="collection-date"></dd></div><div><dt>문서 분량</dt><dd id="page-count"></dd></div></dl><a class="text-link" id="official-source" target="_blank" rel="noopener">공식 출처 확인 <span aria-hidden="true">↗</span><span class="sr-only">(새 탭)</span></a></section>
-          <section class="product-qr"><p class="eyebrow">SCAN TO OPEN</p><h2>이 제품의 MSDS</h2><img id="product-qr" alt="이 제품의 MSDS 페이지로 연결되는 QR 코드" width="240" height="240"><p>QR을 스캔하면 이 페이지로 연결됩니다.</p><a class="button button-secondary" id="download-qr" download>제품 QR 저장 <span aria-hidden="true">↓</span></a><a class="text-link cover-link" id="open-cover" target="_blank" rel="noopener">인쇄용 갑지 열기 <span aria-hidden="true">↗</span><span class="sr-only">(새 탭)</span></a></section>
-        </aside>
-        <section class="preview-section" aria-labelledby="preview-title"><div class="preview-heading"><div><p class="eyebrow">FULL DOCUMENT</p><h2 id="preview-title">문서 전체 미리보기</h2></div><span class="preview-count" id="preview-count"></span></div><p class="preview-note">화면을 내려 모든 페이지를 확인하세요. 글자를 확대하거나 텍스트를 검색하려면 원문 PDF를 열어 주세요.</p><div id="preview-pages" class="preview-pages"></div><p class="preview-bottom">미리보기는 원문 PDF를 이미지로 표시합니다. 문서의 내용은 원문 PDF를 기준으로 확인하세요.</p></section>
-      </div>
+      <header class="document-heading"><span class="category-tag" id="document-category"></span><h1 id="document-title"></h1><p class="manufacturer" id="document-manufacturer"></p></header>
+      <div class="document-main-actions"><a class="button button-primary" id="open-pdf" target="_blank" rel="noopener">PDF 열기<span class="sr-only">(새 탭)</span></a><a class="button button-secondary" id="download-pdf" download>PDF 저장</a></div>
+      <details class="utility-panel document-tools">
+        <summary>QR·갑지·문서 정보</summary>
+        <div class="utility-content document-utilities">
+          <div><dl class="metadata"><div><dt>개정일</dt><dd id="revision-date"></dd></div><div><dt>수집일</dt><dd id="collection-date"></dd></div><div><dt>분량</dt><dd id="page-count"></dd></div></dl><a class="text-link" id="official-source" target="_blank" rel="noopener">공식 출처<span class="sr-only">(새 탭)</span></a><div class="cover-link"><a class="text-link" id="open-cover" target="_blank" rel="noopener">인쇄용 갑지<span class="sr-only">(새 탭)</span></a></div></div>
+          <div class="qr-detail-content"><img id="product-qr" alt="이 제품의 MSDS QR" width="180" height="180" loading="lazy"><a class="text-link" id="download-qr" download>제품 QR 저장</a></div>
+        </div>
+      </details>
+      <section class="preview-section" aria-label="MSDS 전체 문서"><div class="preview-heading"><h2>MSDS</h2><span class="preview-count" id="preview-count"></span></div><div id="preview-pages" class="preview-pages"></div></section>
     </div>
-    <section class="not-found" id="not-found" hidden aria-labelledby="not-found-title"><p class="eyebrow">DOCUMENT NOT FOUND</p><h1 id="not-found-title">자료를 찾을 수 없습니다.</h1><p>주소가 올바른지 확인하거나 전체 목록에서 제품을 선택해 주세요.</p><a class="button button-primary" href="index.html">전체 자료 목록으로</a></section>
-    <noscript><p class="empty-state">제품 정보를 보려면 브라우저의 JavaScript를 켜 주세요. <a href="index.html">전체 자료 목록으로</a></p></noscript>
+    <section class="not-found" id="not-found" hidden aria-labelledby="not-found-title"><h1 id="not-found-title">자료를 찾을 수 없습니다.</h1><a class="button button-primary" href="index.html">전체 목록</a></section>
+    <noscript><p class="empty-state">자료를 보려면 JavaScript를 켜 주세요.</p></noscript>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><a href="index.html">MSDS 자료실 <span class="footer-divider">/</span> 전체 목록</a><p>공식 공개 자료로 구성한 예시 자료실입니다.</p></div></footer>
 </body>
 </html>

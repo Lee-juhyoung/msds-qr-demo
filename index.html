@@ -4,61 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123f3b">
-  <meta name="description" content="공식 공개 MSDS를 제품별로 확인하고 QR로 연결하는 예시 자료실입니다.">
-  <title>MSDS 자료실 · QR 예시</title>
+  <meta name="description" content="제품별 MSDS와 QR, 인쇄용 갑지.">
+  <title>MSDS 목록</title>
   <link rel="stylesheet" href="styles.css">
   <script src="data.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a class="brand" href="index.html" aria-label="MSDS 자료실 홈"><span class="brand-mark" aria-hidden="true">M</span> MSDS 자료실</a>
-      <span class="sample-tag">QR 연결 예시</span>
-    </div>
-  </header>
   <main class="shell" id="main">
-    <section class="hero" aria-labelledby="page-title">
-      <div class="hero-copy">
-        <p class="eyebrow">SAFETY DATA LIBRARY</p>
-        <h1 id="page-title">안전자료를,<br>필요한 순간 바로.</h1>
-        <p class="hero-description">제품을 선택하거나 QR을 스캔해<br class="desktop-break"> 해당 물질안전보건자료(MSDS)를 확인하세요.</p>
-        <p class="collection-date">자료 수집일 <span id="checked-at">—</span></p>
-      </div>
-      <aside class="quick-guide" aria-labelledby="guide-title">
-        <p class="eyebrow">QUICK ACCESS</p>
-        <h2 id="guide-title">현장에서는 QR로 연결</h2>
-        <ol class="steps">
-          <li><span class="step-number">01</span><div><strong>제품별 갑지 출력</strong><p>제품 정보와 개별 QR을 함께 배치합니다.</p></div></li>
-          <li><span class="step-number">02</span><div><strong>휴대폰으로 QR 스캔</strong><p>선택한 제품의 MSDS를 바로 확인합니다.</p></div></li>
-          <li><span class="step-number">03</span><div><strong>전체 목록에서 다시 찾기</strong><p>공용 QR 하나로 모든 자료에 접근합니다.</p></div></li>
-        </ol>
-      </aside>
-    </section>
-
-    <p class="notice"><span class="notice-label">예시 자료</span> 공식 공개 자료로 구성한 예시입니다. 실제 사용 제품과 문서가 일치하는지 확인하세요.</p>
-
-    <section class="library" aria-labelledby="library-title">
-      <div class="section-heading"><div><p class="eyebrow">DOCUMENTS</p><h2 id="library-title">제품별 안전자료</h2></div><p class="result-count" id="result-count" role="status" aria-live="polite">자료를 불러오는 중입니다.</p></div>
+    <header class="page-heading"><h1>MSDS 목록</h1><span class="sample-tag">예시 자료</span></header>
+    <section class="library" aria-label="제품 목록">
       <div class="filters">
-        <div class="search-field"><label for="search">자료 검색</label><input id="search" type="search" placeholder="제품명, 제조·공급사, 분류로 검색" autocomplete="off"></div>
-        <div class="category-field"><label for="category">제품 분류</label><select id="category"><option value="">모든 분류</option></select></div>
+        <div class="search-field"><label class="sr-only" for="search">제품명·제조사 검색</label><input id="search" type="search" placeholder="제품명·제조사 검색" autocomplete="off"></div>
+        <div class="category-field"><label class="sr-only" for="category">제품 분류</label><select id="category"><option value="">전체 분류</option></select></div>
       </div>
+      <p class="result-count" id="result-count" role="status" aria-live="polite">자료를 불러오는 중입니다.</p>
       <div class="document-list" id="document-list"></div>
-      <p class="empty-state" id="empty-state" hidden>검색 조건에 맞는 자료가 없습니다. 검색어 또는 분류를 변경해 주세요.</p>
-      <noscript><p class="empty-state">자료 목록을 보려면 브라우저의 JavaScript를 켜 주세요.</p></noscript>
+      <p class="empty-state" id="empty-state" hidden>검색 결과가 없습니다.</p>
+      <noscript><p class="empty-state">자료 목록을 보려면 JavaScript를 켜 주세요.</p></noscript>
     </section>
-
-    <section class="sharing" aria-labelledby="sharing-title">
-      <div class="sharing-copy"><p class="eyebrow">PRINT & SHARE</p><h2 id="sharing-title">한 번에 준비하는<br>현장용 자료</h2><p>제품별 갑지와 QR을 내려받아 활용하세요.<br>전체 목록 QR은 공용 게시용으로 사용할 수 있습니다.</p></div>
-      <div class="sharing-actions">
-        <a class="download-row" href="downloads/msds-covers.pdf" download><div><strong>전체 제품 갑지</strong><span>제품별 정보 + 개별 QR · PDF</span></div><span aria-hidden="true">↓</span></a>
-        <a class="download-row" href="downloads/msds-example.zip" download><div><strong>예시 자료 전체 묶음</strong><span>MSDS + 갑지 + QR · ZIP</span></div><span aria-hidden="true">↓</span></a>
-        <details class="qr-details"><summary>전체 목록 QR 보기·저장 <span aria-hidden="true">＋</span></summary><div class="qr-detail-content"><img src="qr/all-msds.png" alt="이 MSDS 전체 목록 페이지로 연결되는 QR 코드" width="240" height="240" loading="lazy"><div><strong>전체 자료 목록으로 연결</strong><p>QR을 스캔한 뒤 제품을 선택하면 해당 MSDS를 열 수 있습니다.</p><a class="button button-secondary" href="qr/all-msds.png" download="all-msds-qr.png">목록 QR 저장</a></div></div></details>
+    <details class="utility-panel">
+      <summary>전체 QR·갑지 다운로드</summary>
+      <div class="utility-content">
+        <div class="download-links"><a class="button button-secondary" href="downloads/msds-covers.pdf" download>갑지 PDF</a><a class="button button-secondary" href="downloads/msds-example.zip" download>전체 ZIP</a></div>
+        <div class="qr-detail-content"><img src="qr/all-msds.png" alt="MSDS 전체 목록 QR" width="180" height="180" loading="lazy"><a class="text-link" href="qr/all-msds.png" download="all-msds-qr.png">전체 목록 QR 저장</a></div>
       </div>
-    </section>
+    </details>
+    <p class="source-note">공식 공개 자료 예시 · 수집일 <span id="checked-at">—</span></p>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><span>MSDS 자료실 <span class="footer-divider">/</span> QR 연결 예시</span><p>문서 개정일과 자료 수집일을 구분해 확인하세요.</p></div></footer>
 </body>
 </html>
